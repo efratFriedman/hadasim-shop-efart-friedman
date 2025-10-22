@@ -1,0 +1,58 @@
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: var(--foreground); 
+  color: var(--background);     
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+}
+
+.scrolled {
+  background: rgba(62, 92, 55, 0.85); 
+  padding: 0.7rem 3rem;
+  backdrop-filter: blur(5px);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--background); 
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: gainsboro
+}
+
+.loginBtn {
+  background: var(--foreground); 
+  color: var(--background);      
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.loginBtn:hover {
+  background: #2e4528;
+  transform: scale(1.05);
+}

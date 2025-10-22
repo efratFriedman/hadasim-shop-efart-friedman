@@ -1,0 +1,61 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px; 
+    margin: 30px auto;
+    gap: 20px;
+    padding: 30px;
+    border: 2px solid var(--foreground); 
+    border-radius: 10px;
+    background-color: var(--background);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputField {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f9fdf9; 
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.inputField:focus {
+    border-color: var(--foreground); 
+    box-shadow: 0 0 6px rgba(40, 167, 69, 0.3);
+    outline: none;
+}
+
+.error {
+    color: #ff4d4f; 
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.successMessage {
+    color: var(--foreground); 
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.submitButton {
+    padding: 12px;
+    background-color: var(--foreground);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.submitButton:hover {
+    background-color: #1e7e34; 
+    transform: translateY(-1px);
+}
